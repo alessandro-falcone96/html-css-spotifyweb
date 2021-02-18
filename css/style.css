@@ -7,9 +7,10 @@ body{
   width: 100%;
 }
 
+/* Grandezze 4 macroaree */
 header{
   width: 80%;
-  height: 100px;
+  height: 10vh;
   background-color: blue;
   margin-left: 20%;
   position: fixed;
@@ -18,15 +19,17 @@ header{
 }
 main{
   width: 80%;
-  height: 1300px;
+  height: 80vh;
   background-color: orange;
   margin-left: 20%;
+  margin-top: 10vh;
 }
 
 aside{
-  width: 20%;
   height: 90vh;
-  background-color: green;
+  width: 20%;
+  min-width: 275px;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,4 +41,79 @@ footer{
   bottom: 0;
   left: 0;
   background-color: purple;
+}
+
+/* Aside */
+aside{
+  color: white;
+}
+aside .container-sopra{
+  width: 80%;
+  margin: auto;
+  /* background-color: lightgreen; */
+  margin-top: 15px;
+}
+aside .container-sopra .logo{
+  display: flex;
+  padding: 10px 0px 5px 15px;
+}
+aside .container-sopra .logo h1{
+  align-self: center;
+  font-size: 30px;
+  padding-left: 10px;
+}
+aside .container-sopra ul li{
+  list-style: none;
+  padding: 5px 0px 5px 15px;
+  color: grey;
+}
+aside .container-sopra h3{
+  padding: 10px 0px 5px 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+aside .container-sopra .crea-playlist{
+  display: flex;
+  padding: 5px 0px 10px 15px;
+  color: grey;
+}
+aside .container-sopra .crea-playlist h4{
+  align-self: center;
+  padding-left: 10px;
+}
+
+aside .container-sopra ul li i.fa-slash{
+  /* color: orange; */
+  transform: rotate(40deg);
+  margin-left: -5px;
+}
+
+aside .container-sotto{
+  width: 85%;
+  margin: 0px 15% 0px 10%;
+  /* background-color: blue; */
+  position: absolute;
+  bottom: 0;
+}
+
+aside .container-sotto .installa{
+  display: flex;
+  margin-bottom: 10px;
+  color: grey;
+}
+aside .container-sotto .installa h6{
+  align-self: center;
+  padding-left: 10px;
+}
+aside .container-sotto .user-john{
+  display: flex;
+  margin-top: 10px;
+}
+aside .container-sotto .user-john i{
+  color: white;
+}
+aside .container-sotto .user-john h5{
+  align-self: center;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
