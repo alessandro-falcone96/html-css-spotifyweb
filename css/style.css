@@ -13,10 +13,9 @@ header{
   width: calc(100% - 275px);
   height: 8vh;
   background-color: #1B0721;
-  margin-left: 275px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 275px;
 }
 main{
   width: calc(100% - 275px);
