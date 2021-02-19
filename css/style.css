@@ -330,8 +330,118 @@ main .artisti-popolari .contenitore-album .album h4{
   margin: 15px 0px;
 }
 
+/* Footer */
+footer{
+  display: flex;
+}
+footer .contenitore-sinistra{
+  background-color: #191919;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+footer .contenitore-sinistra img{
+  height: 50px;
+  width: 50px;
+  margin: 0px 10px;
+}
+footer .contenitore-sinistra .canzone-riprodotta{
+  margin-right: 30px;
+}
+footer .contenitore-sinistra h5{
+  color: white;
+}
+footer .contenitore-sinistra h6{
+  color: grey;
+}
+footer .contenitore-sinistra i{
+  color: grey;
+  padding: 0px 5px;
+}
 
+footer .contenitore-centro{
+  background-color: #191919;
+  width: 50%;
+}
+footer .contenitore-centro .contenitore-alto{
+  background-color: #191919;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contenitore-centro .contenitore-alto i{
+  padding: 0px 10px;
+  color: white;
+}
+footer .contenitore-centro .contenitore-basso{
+  background-color: #191919;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .contenitore-centro .contenitore-basso p{
+  color: white;
+}
+footer .contenitore-centro .contenitore-basso hr{
+  height: 5px;
+  width: 80%;
+  color: grey;
+  background-color: grey;
+  border: 1px solid grey;
+  position: relative;
+  border-radius: 15px;
+}
 
+footer .contenitore-centro .contenitore-basso hr:before{
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    content: '';
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 20%;
+    z-index: 1;
+}
+
+footer .contenitore-destra{
+  background-color: #191919;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .contenitore-destra i{
+  color: lightgrey;
+}
+footer .contenitore-destra hr{
+  height: 5px;
+  width: 50%;
+  color: grey;
+  background-color: grey;
+  border: 1px solid grey;
+  position: relative;
+  border-radius: 15px;
+}
+footer .contenitore-destra hr:before{
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    content: '';
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 20%;
+    z-index: 1;
+}
 
 
 
