@@ -29,7 +29,6 @@ main{
 
 aside{
   height: 90vh;
-  width: 20%;
   /* min-width: 275px; */
   background-color: black;
   position: fixed;
@@ -67,9 +66,18 @@ aside .container-sopra .logo h1{
 }
 aside .container-sopra ul li{
   list-style: none;
-  padding: 5px 0px 5px 15px;
   color: grey;
 }
+aside .container-sopra ul.nav-principale li{
+  margin: 15px 0px;
+  padding: 0px 15px;
+}
+
+aside .container-sopra ul.nav-principale li:hover{
+  color: white;
+  border-left: 2px solid green;
+}
+
 aside .container-sopra h3{
   padding: 10px 0px 5px 15px;
   text-transform: uppercase;
@@ -97,11 +105,15 @@ aside .container-sopra .playlist h4{
   align-self: center;
   padding-left: 10px;
 }
-/* aside .container-sopra ul:last-child{
-  height: 250px;
+aside .container-sopra ul.lista-playlist{
+  margin-bottom: 61px;
   overflow: auto;
-  background-color: green;
-} */
+  overflow-x: hidden;
+}
+aside .container-sopra ul.lista-playlist li{
+  margin: 10px 0px 10px 15px;
+  font-size: 15px;
+}
 
 aside .container-sopra ul li i.fa-slash{
   /* color: orange; */
@@ -121,6 +133,7 @@ aside .container-sotto{
   /* background-color: blue; */
   position: absolute;
   bottom: 0;
+  /* height: 61px; */
 }
 
 aside .container-sotto .installa{
@@ -143,6 +156,13 @@ aside .container-sotto .user-john h5{
   align-self: center;
   padding-left: 10px;
   margin-bottom: 10px;
+}
+
+aside .container-sotto hr{
+  height: 1px;
+  color: grey;
+  background-color: grey;
+  border: 1px solid grey;
 }
 
 
@@ -221,6 +241,7 @@ main nav ul{
 }
 main nav ul li{
   padding: 0px 10px;
+  line-height: 30px;
 }
 main nav ul li a{
   text-decoration: none;
@@ -235,6 +256,7 @@ main .recently{
   background-color: #131313;
   overflow: auto;
   overflow-y: hidden;
+  min-height: calc((100% - 50px) / 3);
 }
 main .recently h2{
   color: white;
@@ -243,7 +265,6 @@ main .recently h2{
 main .recently .contenitore-album{
   display: flex;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
 }
 main .recently .contenitore-album .album{
   width: 150px;
@@ -254,6 +275,33 @@ main .recently .contenitore-album .album img{
   height: 150px;
   width: 150px;
 }
+
+/* Overlay IMG */
+main .contenitore-album .album .cont{
+  position: relative;
+}
+main .contenitore-album .album .cont .middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .contenitore-album .album .cont .middle i{
+  color: white;
+}
+main .contenitore-album .album:hover img {
+  opacity: 0.5;
+}
+main .contenitore-album .album:hover .middle {
+  opacity: 1;
+}
+
+
+
+
+
 main .recently .contenitore-album .album h4{
   color: white;
   margin: 15px 0px;
@@ -265,9 +313,9 @@ main .recently .contenitore-album .album h6{
 
 
 
-
 main .creato-per{
   background-color: #131313;
+  min-height: calc((100% - 50px) / 3);
 }
 main .creato-per h2{
   color: white;
@@ -301,6 +349,7 @@ main .creato-per .contenitore-album .album h4{
 
 main .artisti-popolari{
   background-color: #131313;
+  min-height: calc((100% - 50px) / 3);
 }
 main .artisti-popolari h2{
   color: white;
@@ -444,6 +493,61 @@ footer .contenitore-destra hr:before{
 }
 
 
+/* Media Query */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  aside{
+    width: 225px;
+  }
+  header{
+    width: calc(100% - 225px);
+    left: 225px;
+  }
+  main{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+  }
+
+  main .recently .contenitore-album{
+    flex-wrap: wrap;
+  }
+  main nav ul{
+    flex-wrap: wrap;
+  }
+  main nav ul li{
+    padding: 0px 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  aside{
+    width: 225px;
+  }
+  header{
+    width: calc(100% - 225px);
+    left: 225px;
+  }
+  main{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+  }
+  header .destra .user{
+    display: none;
+  }
+  main .recently .contenitore-album{
+    flex-wrap: wrap;
+  }
+  main nav ul{
+    flex-wrap: wrap;
+  }
+  main nav ul li{
+    padding: 0px 30px;
+    justify-content: center;
+    font-size: 15px;
+  }
+}
 
 
 /* 1100px-700px
