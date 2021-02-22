@@ -315,7 +315,6 @@ nav li:after {
   border-right: 2px solid green;
   opacity: 0;
 }
-
 main nav ul li:hover::after{
   opacity: 1;
 }
