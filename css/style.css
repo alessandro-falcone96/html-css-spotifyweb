@@ -292,7 +292,7 @@ main .recently{
   background-color: #131313;
   overflow: auto;
   overflow-y: hidden;
-  min-height: calc((100% - 50px) / 3);
+  /* min-height: calc((100% - 50px) / 3); */
 }
 main .recently h2{
   color: white;
@@ -351,7 +351,7 @@ main .recently .contenitore-album .album h6{
 
 main .creato-per{
   background-color: #131313;
-  min-height: calc((100% - 50px) / 3);
+  /* min-height: calc((100% - 50px) / 3); */
 }
 main .creato-per h2{
   color: white;
@@ -380,12 +380,69 @@ main .creato-per .contenitore-album .album h4{
   margin: 15px 0px;
 }
 
+main .tue-playlist{
+  background-color: #131313;
+}
+main .tue-playlist h2{
+  color: white;
+  padding: 20px 0px 20px 20px;
+}
+main .tue-playlist h6{
+  color: lightgrey;
+  padding: 5px 0px 20px 20px;
+}
+main .tue-playlist .contenitore-album{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+main .tue-playlist .contenitore-album .album{
+  width: 150px;
+  text-align: center;
+  margin: 0px 20px;
+}
+main .tue-playlist .contenitore-album .album img{
+  height: 150px;
+  width: 150px;
+}
+main .tue-playlist .contenitore-album .album h4{
+  color: white;
+  margin: 15px 0px;
+}
 
-
+main .unicamente{
+  background-color: #131313;
+}
+main .unicamente h2{
+  color: white;
+  padding: 20px 0px 20px 20px;
+}
+main .unicamente h6{
+  color: lightgrey;
+  padding: 5px 0px 20px 20px;
+}
+main .unicamente .contenitore-album{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+main .unicamente .contenitore-album .album{
+  width: 150px;
+  text-align: center;
+  margin: 0px 20px;
+}
+main .unicamente .contenitore-album .album img{
+  height: 150px;
+  width: 150px;
+}
+main .unicamente .contenitore-album .album h4{
+  color: white;
+  margin: 15px 0px;
+}
 
 main .artisti-popolari{
   background-color: #131313;
-  min-height: calc((100% - 50px) / 3);
+  /* min-height: calc((100% - 50px) / 3); */
 }
 main .artisti-popolari h2{
   color: white;
