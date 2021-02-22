@@ -86,6 +86,7 @@ aside .container-sopra h3{
 aside .container-sopra .playlist{
   padding: 5px 0px 10px 15px;
   color: grey;
+  border-bottom: 1px solid grey;
   /* background-color: orange; */
 }
 aside .container-sopra .playlist .crea-playlist{
@@ -105,10 +106,16 @@ aside .container-sopra .playlist h4{
   align-self: center;
   padding-left: 10px;
 }
+aside .container-sopra .playlist h4:hover,
+aside .container-sopra ul.lista-playlist li:hover,
+aside .container-sotto .installa:hover{
+  color: white;
+}
 aside .container-sopra ul.lista-playlist{
-  margin-bottom: 61px;
+  height: 300px;
   overflow: auto;
-  overflow-x: hidden;
+  margin-top: 10px;
+  /* overflow-x: hidden; */
 }
 aside .container-sopra ul.lista-playlist li{
   margin: 10px 0px 10px 15px;
@@ -248,7 +255,28 @@ main nav ul li a{
   color: lightgrey;
   text-transform: uppercase;
 }
+main nav ul li a:hover{
+  color: white;
+  /* border-bottom: 2px solid green; */
+}
 
+.bordo-fisso-centrale {
+	position: relative;
+}
+.bordo-fisso-centrale:before,
+.bordo-fisso-centrale:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+.bordo-fisso-centrale:after {
+  width: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  border-bottom: 2px solid green;
+  border-right: 2px solid green;
+  /* opacity: 0; */
+}
 
 
 
