@@ -298,29 +298,27 @@ main nav ul li a:hover{
   /* border-bottom: 2px solid green; */
 }
 
-main nav ul li a:hover + .bordo-fisso-centrale:after{
-  opacity: 1;
-}
-.bordo-fisso-centrale {
+nav li {
 	position: relative;
 }
-.bordo-fisso-centrale:before,
-.bordo-fisso-centrale:after {
+nav li:before,
+nav li:after {
     content: '';
     display: block;
     position: absolute;
 }
-.bordo-fisso-centrale:after {
+nav li:after {
   width: 40px;
   left: 50%;
   transform: translate(-50%);
   border-bottom: 2px solid green;
   border-right: 2px solid green;
-  /* opacity: 0; */
+  opacity: 0;
 }
-/* main nav ul li a:hover + a.bordo-fisso-centrale::after{
+
+main nav ul li:hover::after{
   opacity: 1;
-} */
+}
 
 
 main .recently{
