@@ -212,7 +212,7 @@ main > nav{
   }
   100% {
     transform: scale(1);
-    border-radius: 50%;
+    border-radius: 0%;
   }
 }
 /* Animazione 2 Fine */
@@ -231,7 +231,7 @@ main > nav{
   }
   100% {
     transform: scale(1);
-    border-radius: 50%;
+    border-radius: 0%;
   }
 }
 /* Animazione 3 Fine */
@@ -264,10 +264,12 @@ main > nav{
   50% {
     border-radius: 0%;
     transform: scale(0.3);
+    transform: rotate(180deg);
   }
   100% {
     border-radius: 50%;
     transform: scale(1);
+    transform: rotate(360deg);
   }
 }
 /* Animazione 5 Fine */
